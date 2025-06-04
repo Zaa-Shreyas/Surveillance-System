@@ -1,6 +1,6 @@
 # Platform-Independent Surveillance System
 
-This project is a platform-independent surveillance system developed for a competition demo in June 2025. It allows users to manage devices, view live camera feeds, record clips, and monitor alerts.
+This project is a platform-independent surveillance system. It allows users to manage devices, view live camera feeds, record clips, and monitor alerts.
 
 ## Directory Structure
 - `frontend/`: React-based frontend for the surveillance system UI.
