@@ -1,15 +1,32 @@
-# Platform-Independent Surveillance System Website
-README.md
-This project is a surveillance system website with a React frontend and a Node.js/Express backend. It supports user authentication and will eventually include features like camera feed integration and alerts.
+# Platform-Independent Surveillance System
 
-## Structure
-**frontend/**: React frontend with Tailwind CSS and Framer Motion.
-**backend/**: Node.js/Express backend with MongoDB for user authentication.
+This project is a platform-independent surveillance system developed for a competition demo in June 2025. It allows users to manage devices, view live camera feeds, record clips, and monitor alerts.
 
-## Setup
-1. Clone the repository:
-\`\`\`bash" 
-git clone https://github.com/shreyas262004/surveillance-system.git
-surveillance-system
-\`\`\`
-2. Set up the frontend and backend as described in their respective READMEs.
+## Directory Structure
+- `frontend/`: React-based frontend for the surveillance system UI.
+- `backend/`: Node.js/Express backend for the surveillance system (mocked data used for demo).
+
+## Features
+- **Device Management**: View and manage connected devices (e.g., Demo Camera at `http://192.168.1.7:8080/`).
+- **Live Feed**: Display live camera feeds using snapshots or video streams.
+- **Recordings**: Record and view mock video clips.
+- **Alerts & Analytics**: Mocked alerts and analytics for demo purposes.
+- **Animations**: Smooth UI transitions using `framer-motion`.
+
+## Setup Instructions
+1. **Frontend**:
+   - Navigate to `frontend/`.
+   - Run `npm install` to install dependencies.
+   - Run `npm start` to start the frontend at `http://localhost:3000`.
+2. **Backend** (if used):
+   - Navigate to `backend/`.
+   - Run `npm install` to install dependencies.
+   - Run `node server.js` (or equivalent) to start the backend.
+
+## Demo Notes
+- The live feed requires a webcam app running on a phone at `http://192.168.1.7:8080/` (update the URL in `frontend/src/components/dashboard.jsx` if needed).
+- Authentication is bypassed for the demo (`isAuthenticated` is hardcoded to `true` in `AppRoutes.js`).
+
+## Tech Stack
+- **Frontend**: React, Tailwind CSS, Framer Motion, React Router
+- **Backend**: Node.js, Express (mocked for demo)
